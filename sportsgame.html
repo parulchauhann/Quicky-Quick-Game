@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quicky Quick</title>
+    <link rel="stylesheet" href="./sportsgame.css">
+    <link rel="icon" type="image/x-icon" href="./assets/favicon (1).ico">
+</head>
+
+<body>
+    <div id="game">
+
+        <div id="containerOne">
+            <ul id="icon_bar">
+                <li class="icons"><img src="./assets/left.png" alt="go back" class="icon" id="back"></li>
+                <li id="secLi" class="icons"><img src="./assets/home.png" alt="home" class="icon" id="home"></li>
+                <li class="icons"><img src="./assets/user.png" alt="profile" class="icon" id="profile"></li>
+            </ul>
+        </div>
+
+        <div id="game_part">
+            <h2>Guess !</h2>
+            <div id="section">
+
+                <input type="text" id="user_input" maxlength="1">
+
+                <div id="input_boxes"></div>
+
+                <div id="text_parts">
+                    <div id="hint_button">
+                        <button id="hint">💡Get a hint</button>
+                    </div>
+                    <div id="guesses">Remaining guesses: <span class="insideBox"></span></div>
+                    <div id="tries">Wrong letter: <span class="insideBox"></span></div>
+                    <div id="skip_button">
+                        <button id="skip">NEXT QUESTION</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="main_buttons">
+            <div id="time_box">Time: <span id="time"></span>sec </div>
+            <div id="score_box"> Score: <span id="scorelevel">0</span></div>
+        </div>
+
+    </div>
+
+    <!-- source for the profile page -->
+    <div id="source">sportsgame</div>
+
+    <script src="./game.js"></script>
+    <script src="./sportsgame.js"></script>
+</body>
+
+</html>

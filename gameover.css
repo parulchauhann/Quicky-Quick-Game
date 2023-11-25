@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Poppins:wght@500&family=Prompt:wght@600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('./assets/9.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    text-align: center;
+}
+
+#icon_bar {
+    margin: 2.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#icons {
+    list-style-type: none;
+}
+
+.icon {
+    width: 4rem;
+    height: 4rem;
+    padding: .5rem;
+    margin: 1.5rem;
+    border-radius: 15%;
+    border: 3px solid black;
+    background-color: rgb(253, 102, 238);
+}
+
+.icon:hover {
+    opacity: 0.5;
+    cursor: pointer;
+    background-color: rgb(175, 173, 173);
+}
+
+#gameOver {
+    font-size: 4rem;
+    margin-top: 5rem;
+    color: rgb(241, 1, 13);
+    font-family: 'Acme', sans-serif;
+}
+
+#yourScore {
+    font-size: 3.5rem;
+    margin-top: 1rem;
+    font-weight: 900;
+    color: whitesmoke;
+    font-family: 'Poppins', sans-serif;
+}
+
+#score {
+    font-size: 5rem;
+    margin: 1rem;
+    color: whitesmoke;
+    font-family: 'Prompt', sans-serif;
+}
+
+#playAgain {
+    width: 15rem;
+    height: 5rem;
+    padding: .5rem;
+    margin: 1rem;
+    font-size: 2.5rem;
+    font-weight: 400;
+    border-radius: 15%;
+    border: 3px solid black;
+    font-family: 'Acme', sans-serif;
+    background-color: rgb(28, 253, 51);
+}
+
+#source {
+    display: none;
+}
+
+#descScore {
+    font-size: 3vw;
+    color: rgb(248, 248, 40);
+    font-family: 'Acme', sans-serif;
+}
+
+@media all and (orientation: portrait) {
+    #gameOver {
+        font-size: 13vw;
+    }
+
+    #descScore {
+        font-size: 6vw;
+    }
+
+    #yourScore {
+        font-size: 9vw;
+    }
+
+    #score {
+        font-size: 15vw;
+    }
+
+    .icon {
+        width: 13vw;
+        height: 13vw;
+        margin: 1rem;
+    }
+
+    #playAgain {
+        width: 100vw;
+        height: 12vh;
+        padding: .5rem;
+        margin: 1rem;
+        font-size: 6vw;
+    }
+}
+
+@media screen and (min-width: 1920px) and (min-height: 1080px) {
+    #gameOver {
+        font-size: 6vw;
+    }
+
+    #descScore {
+        font-size: 3vw;
+        margin-bottom: 4vw;
+    }
+
+    #yourScore {
+        font-size: 4.5vw;
+    }
+
+    #score {
+        font-size: 6vw;
+    }
+
+    .icon {
+        width: 5vw;
+        height: 5vw;
+        margin: 1rem;
+    }
+
+    #playAgain {
+        width: 20vw;
+        height: 10vh;
+        padding: .5rem;
+        margin: 1rem;
+        font-size: 3vw;
+    }
+}

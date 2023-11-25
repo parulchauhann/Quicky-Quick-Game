@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Poppins:wght@300&family=Prompt:wght@600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('./assets/2-_esBckeAk-transformed.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#icon_bar {
+    margin-top: 1.7rem;
+    list-style-type: none;
+    width: 3rem;
+}
+
+.icon {
+    width: 3rem;
+    height: 3rem;
+    padding: .5rem;
+    margin: 1.5rem;
+    margin-left: 1.5rem;
+    background-color: white;
+}
+
+.icon:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+#signin_box {
+    width: 36rem;
+    height: 25rem;
+    border-radius: 1%;
+    background-color: rgba(247, 247, 247, 0.705);
+    margin: auto;
+    margin-top: 9rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#name,
+#nickname {
+    padding: 1rem;
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: rgb(173, 27, 27);
+    letter-spacing: .1rem;
+    font-family: 'Acme', sans-serif;
+}
+
+.input_box {
+    width: 22rem;
+    padding: 1rem;
+    font-size: 1.3rem;
+    border: 2px solid black;
+}
+
+#next_button {
+    width: 6.8rem;
+    height: 3.3rem;
+    padding: 1rem;
+    margin: 2.5rem;
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    border-radius: 20%;
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(143, 26, 26);
+}
+
+#next_button:hover {
+    transform: scale(1.09);
+    cursor: pointer;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+#source {
+    display: none;
+}
+
+@media all and (orientation: portrait) {
+    #signin_box {
+        width: 84vw;
+        height: 40vh;
+        display: flex;
+        align-items: center;
+        margin-right: 12vw;
+        margin-top: 26vh;
+    }
+
+    #name,
+    #nickname {
+        font-size: 1.5rem;
+    }
+
+    .input_box {
+        width: 65vw;
+        height: 7vh;
+        font-size: 4vw;
+    }
+
+    #next_button {
+        width: 20vw;
+        height: 6vh;
+        padding: 1rem;
+        margin: 5vw;
+        font-size: 4vw;
+        margin-left: 24vw;
+    }
+
+    #icon_bar {
+        display: flex;
+        margin-top: 1.8vh;
+    }
+
+    .icon {
+        width: 10vw;
+        height: 5vh;
+        padding: .3rem;
+        margin: 1.5vh;
+    }
+
+    #lastTwoIcon {
+        display: flex;
+        align-items: end;
+    }
+
+    #containerOne {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #secLi {
+        margin-left: 50vw;
+    }
+}
+
+@media only screen and (width: 768px){
+    #signin_box {
+        width: 83vw;
+        margin-right: 8vw;
+    }
+
+}
+
+@media screen and (min-width: 1920px) and (min-height: 1080px) {
+    #signin_box {
+        width: 45vw;
+        height: 40vh;
+        margin-top: 15vw;
+    }
+
+    #next_button {
+        width: 6vw;
+        height: 5vh;
+        padding: 1vw;
+        margin: 2.5vw;
+        margin-left: 14vw;
+        text-align: center;
+        font-size: 1.4vw
+    }
+
+    .input_box {
+        width: 35vw;
+        height: 6vh;
+        font-size: 1.5vw;
+    }
+
+    #name,
+    #nickname {
+        font-size: 2.3rem;
+        text-align: center;
+    }
+
+    #icon_bar {
+        display: flex;
+        margin-top: 1.8vh;
+    }
+
+    .icon {
+        width: 4vw;
+        height: 7vh;
+        padding: .3rem;
+        margin: 1.5vh;
+    }
+
+    #secLi {
+        margin-left: 78vw;
+    }
+}
+

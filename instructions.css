@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=BioRhyme&family=Bitter&family=Boogaloo&family=Lilita+One&family=Slackey&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('./assets/3-transformed.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#icon_bar {
+    margin-top: 1.7rem;
+    list-style-type: none;
+    width: 3rem;
+}
+
+.icon {
+    width: 3rem;
+    height: 3rem;
+    padding: .5rem;
+    margin: 1.5rem 0rem 1.5rem 1.5rem;
+    margin-left: 1.5rem;
+    border: 1px solid black;
+    background-color: rgb(255, 254, 254);
+}
+
+.icon:hover {
+    opacity: 0.5;
+    cursor: pointer;
+    background-color: rgb(175, 173, 173);
+}
+
+#instructionSection {
+    opacity: 90%;
+    width: 38rem;
+    height: 28rem;
+    margin: auto;
+    display: flex;
+    margin-top: 8rem;
+    align-items: center;
+    border-radius: 7vw;
+    justify-content: center;
+    flex-direction: column;
+    border: 3px solid rgb(211, 25, 56);
+    background-color: rgba(216, 66, 66, 0.685);
+}
+
+#instructions {
+    color: white;
+    font-size: 1.7rem;
+    padding: 1rem;
+    margin-left: 2rem;
+    font-family: 'Boogaloo', sans-serif;
+}
+
+h2 {
+    font-size: 2rem;
+    color: rgb(195, 247, 54);
+    letter-spacing: .1rem;
+    font-weight: lighter;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-decoration: underline;
+}
+
+h3 {
+    color: rgb(247, 243, 35);
+    font-size: 1.4rem;
+    font-weight: 200;
+    text-align: center;
+    font-family: 'Boogaloo', sans-serif;
+}
+
+.points {
+    margin-top: .8rem;
+}
+
+#button {
+    display: flex;
+    justify-content: center;
+}
+
+#next_button {
+    width: 6rem;
+    height: 3.5rem;
+    margin-top: 1rem;
+    color: rgb(253, 253, 239);
+    font-size: 1.6rem;
+    border-radius: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: lighter;
+    flex-direction: row;
+    letter-spacing: .1rem;
+    border: 1px solid rgb(250, 247, 247);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    animation: blink 1.5s infinite;
+    background-color: rgb(139, 175, 39);
+}
+
+/* makes next button 1.08 times larger than its original size */
+#next_button:hover {
+    transform: scale(1.08);
+    cursor: pointer;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+}
+
+#name {
+    font-size: 2rem;
+    margin-top: 2rem;
+    font-family: 'Boogaloo', sans-serif;
+    font-weight: 400;
+    position: absolute;
+    color: yellow;
+    top: 1rem;
+    text-align: center;
+}
+
+#source {
+    display: none;
+}
+
+@media all and (orientation: portrait) {
+    body {
+        background-image: url('./assets/mobile3.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
+    #icon_bar {
+        display: flex;
+        margin-top: 1.8vh;
+    }
+
+    .icon {
+        width: 10vw;
+        height: 5vh;
+        padding: .3rem;
+        margin: 1.5vh;
+    }
+
+    #lastTwoIcon {
+        display: flex;
+        align-items: end;
+    }
+
+    #containerOne {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #secLi {
+        margin-left: 50vw;
+    }
+
+    #name {
+        font-size: 5vw;
+        letter-spacing: .1vw;
+        margin-top: 10vh;
+    }
+
+    #instructionSection {
+        width: 84vw;
+        height: 46vh;
+        margin-top: 12rem;
+        position: relative;
+        right: 6vw;
+    }
+
+    #instructions {
+        font-size: 4.5vw;
+        margin-left: 7vw;
+        padding: 1vw;
+    }
+
+    h2 {
+        font-size: 5vw;
+    }
+
+    h3 {
+        font-size: 5vw;
+    }
+
+    #next_button {
+        width: 20vw;
+        height: 6vh;
+        margin-top: .8rem;
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (min-width: 1920px) and (min-height: 1080px) {
+    #icon_bar {
+        display: flex;
+        margin-top: 1.8vh;
+    }
+
+    .icon {
+        width: 4vw;
+        height: 7vh;
+        padding: .3rem;
+        margin: 1.5vh;
+    }
+
+    #secLi {
+        margin-left: 78vw;
+    }
+
+    #name {
+        font-size: 2.5vw;
+        margin-top: 12vh;
+    }
+
+    #instructionSection {
+        width: 52vw;
+        height: 62vh;
+        margin-top: 16rem;
+        position: relative;
+        right: 0vw;
+    }
+
+    #instructions {
+        font-size: 2.5vw;
+        margin-left: 7vw;
+        padding: .5vw;
+    }
+
+    h2 {
+        font-size: 3vw;
+    }
+
+    h3 {
+        font-size: 2.7vw;
+    }
+
+    #next_button {
+        width: 10vw;
+        height: 8vh;
+        margin-top: 1.5rem;
+        font-size: 2.5rem;
+    }
+}
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

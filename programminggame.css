@@ -1,0 +1,391 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Poppins:wght@600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-image: url('./assets/programming\ 2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#icon_bar {
+    margin-top: 1.7rem;
+    list-style-type: none;
+    width: 3rem;
+}
+
+.icon {
+    width: 3rem;
+    height: 3rem;
+    padding: .5rem;
+    margin: 1.5rem;
+    margin-left: 1.5rem;
+    border: 1px solid black;
+    background-color: rgb(255, 254, 254);
+}
+
+.icon:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+#game_part {
+    width: 30rem;
+    height: 33rem;
+    border-radius: 3%;
+    background-color: white;
+}
+
+h2 {
+    padding: .7rem;
+    font-size: 2.8rem;
+    text-align: center;
+    color: rgb(247, 53, 127);
+    font-weight: bolder;
+    font-family: 'Poppins', sans-serif;
+    border-bottom: 1px grey solid;
+}
+
+#section {
+    margin: 2.5rem 2rem;
+}
+
+#input_boxes {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.box {
+    width: 2.5rem;
+    height: 2.5rem;
+    margin: 0.2rem;
+    font-size: 1.7rem;
+    font-weight: 700;
+    border-radius: 10%;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    border: 1px solid rgb(94, 90, 90);
+}
+
+#user_input {
+    opacity: 0;
+    z-index: -999;
+    position: absolute;
+}
+
+.insideBox {
+    opacity: .8;
+}
+
+#text_parts {
+    display: flex;
+    flex-direction: column;
+}
+
+#hint {
+    width: fit-content;
+    padding: .4rem;
+    margin: 1rem;
+    cursor: pointer;
+    margin-top: 1.5rem;
+    font-size: 1.3rem;
+    border-radius: 15%;
+    font-weight: bolder;
+    text-align: center;
+    background-color: rgb(252, 116, 136);
+}
+
+#hint_button {
+    max-width: fit-content;
+    margin: auto;
+}
+
+#guesses {
+    font-size: 1.5rem;
+}
+
+#tries {
+    font-size: 1.5rem;
+}
+
+#text_parts div {
+    margin-bottom: 1rem;
+}
+
+#skip {
+    width: 25rem;
+    padding: .4rem;
+    font-size: 1.5rem;
+    border-radius: 5%;
+    font-weight: 700;
+    text-align: center;
+    cursor: pointer;
+    letter-spacing: .1rem;
+    word-spacing: .2rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: rgb(253, 47, 116);
+}
+
+#skip_button {
+    margin: auto;
+}
+
+#time_box {
+    width: 10rem;
+    padding: .4rem;
+    margin: 1rem;
+    margin-top: 1rem;
+    font-size: 3rem;
+    border-radius: 15%;
+    font-weight: bolder;
+    text-align: center;
+    color: white;
+    margin-bottom: 10rem;
+    border: 2px solid white;
+    background-color: rgb(253, 47, 116);
+}
+
+#score_box {
+    width: 10rem;
+    height: 8rem;
+    padding: .2rem;
+    margin: .7rem;
+    margin-top: 1.5rem;
+    font-size: 2rem;
+    border-radius: 15%;
+    font-weight: bolder;
+    text-align: center;
+    color: white;
+    border: 2px solid white;
+    background-color: rgb(253, 47, 116);
+}
+
+#scorelevel {
+    font-size: 2rem;
+}
+
+#game {
+    display: flex;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+#game_part {
+    margin-top: 6rem;
+    margin-left: 9rem;
+}
+
+#scorelevel {
+    font-size: 1.5rem;
+}
+
+#source {
+    display: none;
+}
+
+@media all and (orientation: portrait) {
+    #icon_bar {
+        display: flex;
+        margin-top: 2vh;
+    }
+
+    .icon {
+        width: 10vw;
+        height: 6vh;
+        padding: .3rem;
+        margin: 1.5vh;
+    }
+
+    #lastTwoIcon {
+        display: flex;
+        align-items: end;
+    }
+
+    #containerOne {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #secLi {
+        margin-left: 50vw;
+    }
+
+    #game_part {
+        width: 85vw;
+        height: 58vh;
+        position: relative;
+        left: 4.5vw;
+    }
+
+    h2 {
+        padding: .2rem;
+        font-size: 8vw;
+    }
+
+    #section {
+        margin: 2rem 1.4rem;
+    }
+
+    .box {
+        width: 7vw;
+        height: 4vh;
+        font-size: 6vw;
+    }
+
+    #hint {
+        padding: .4rem;
+        margin-top: .4rem;
+        font-size: 1.7vh;
+    }
+
+    #guesses {
+        font-size: 4vw;
+    }
+
+    #tries {
+        font-size: 4vw;
+    }
+
+    #skip {
+        width: 56vw;
+        padding: .4rem;
+        font-size: 4vw;
+    }
+
+    #time_box {
+        width: 30vw;
+        height: 6vh;
+        margin: 1rem;
+        margin-left: auto;
+        margin-top: 1rem;
+        font-size: 4vw;
+        margin-bottom: 20vh;
+    }
+
+    #score_box {
+        width: 30vw;
+        height: 6vh;
+        padding: .1vw;
+        margin-right: auto;
+        margin-top: 1rem;
+        font-size: 4vw;
+    }
+
+    #scorelevel {
+        font-size: 6vw;
+    }
+
+    #game {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    #main_buttons {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #game_part {
+        margin-top: 4vh;
+        margin-left: 1rem;
+    }
+}
+
+@media only screen and (width: 1000px) {
+    #game_part {
+        width: 55vw;
+        height: 80vh;
+        position: relative;
+        left: 0vw;
+        bottom: 5vh;
+    }
+
+}
+
+
+@media screen and (min-width: 1920px) and (min-height: 1080px) {
+    .icon {
+        width: 4vw;
+        height: 5.5vh;
+        padding: .3rem;
+        margin: 2vh;
+    }
+    
+    #game_part {
+        width: 40vw;
+        height: 65vh;
+        position: relative;
+        left: 3.5vw;
+        top: 4vw;
+    }
+
+    #time_box {
+        width: 15vw;
+        height: 15vh;
+        margin: 2rem;
+        margin-left: auto;
+        margin-top: 2rem;
+        font-size: 2.7vw;
+        margin-bottom: 20vh;
+    }
+    
+    #score_box {
+        width: 15vw;
+        height: 10vh;
+        padding: .1vw;
+        margin-right: auto;
+        margin-top: 1rem;
+        font-size: 2.7vw;
+    }
+
+    #scorelevel {
+        font-size: 2.5vw;
+    }
+
+    h2 {
+        padding: .2rem;
+        font-size: 4vw;
+    }
+
+    .box {
+        width: 3.5vw;
+        height: 6vh;
+        font-size: 3vw;
+    }
+    
+    #hint {
+        padding: .4rem;
+        margin-top: .4rem;
+        font-size: 1.7vh;
+    }
+    
+    #guesses {
+        font-size: 1.5vw;
+    }
+
+    #tries {
+        font-size: 2vw;
+    }
+    
+    #skip {
+        width: 33vw;
+        padding: .4rem;
+        font-size: 2.3vw;
+    }
+
+    #hint {
+        padding: .4rem;
+        margin-top: 1vw;
+        font-size: 3vh;
+    }
+}
