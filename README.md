@@ -29,3 +29,4 @@ The theme of the game is inspired from my own interests, however I took the back
 https://www.figma.com/proto/To11AGYouEzE3qfiEzCvrN/Quicky-Quick?page-id=0%3A1&type=design&node-id=1-5&viewport=-772%2C398%2C0.39&t=rtWf1QHs2W3vGkZ8-1&scaling=scale-down&starting-point-node-id=1%3A5&mode=design
 
 ## Here's the code to the game:
+https://parulchauhann.github.io/Quicky-Quick-Game/
